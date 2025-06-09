@@ -1,4 +1,4 @@
 name = "todo-preview-prod"
 main = "src/index.js"
-account_id = "c5b4810772f7ad8dc1f27f477eecca3e";
+account_id = "c5b4810772f7ad8dc1f27f477eecca3e"
 compatibility_date = "2025-06-08"
