@@ -1,5 +1,4 @@
 export default {Add commentMore actions
-  async fetch(_request, _env, _ctx) {
   async fetch(request, env, _ctx) {
     const url = new URL(request.url);
 
