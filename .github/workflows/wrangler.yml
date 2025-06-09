@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - release
 
 jobs:
   deploy:
@@ -11,11 +12,14 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install Wrangler
-        run: npm install -g wrangler@4.19.1
-
-      - name: Publish to Cloudflare Workers
-        run: wrangler deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Deploy to Dev
+        if: github.ref == 'refs/heads/main'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          environment: dev
+      - name: Deploy to Prod
+        if: github.ref == 'refs/heads/release'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
