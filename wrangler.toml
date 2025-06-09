@@ -1,4 +1,9 @@
+name = "todo-preview-prod"
 main = "src/index.js"
 account_id = "c5b4810772f7ad8dc1f27f477eecca3e"
 compatibility_date = "2025-06-08"
 workers_dev = true
+
+[[kv_namespaces]]
+binding = "TODOS"
+id = "a54e9c2e6d5740dda734df7490524d3a"
