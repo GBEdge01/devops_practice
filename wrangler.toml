@@ -12,5 +12,5 @@ id = "a54e9c2e6d5740dda734df7490524d3a"
 name = "todo-preview-dev"
 
 [[env.dev.kv_namespaces]]
-binding = "TODOS"
+binding = "TODOS_DEV"
 id = "2f675112270b4133b1a48cc32f860baf"
