@@ -1,7 +1,4 @@
-main = "src/index.js"Add commentMore actions
-account_id = "9bccf61ade33a74db17940fb28b60248"
-compatibility_date = "2025-06-08"
-
-[[kv_namespaces]]
-binding = "TODOS"
-id = "todos_namespace"
+main = "src/index.js"
+account_id = "c5b4810772f7ad8dc1f27f477eecca3e"
+compatibility_date = "2025-06-08"Add commentMore actions
+workers_dev = true
